@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+nclude <bits/stdc++.h>
 
 using namespace std;
 
@@ -6,17 +6,15 @@ vector<string> split_string(string);
 
 // Complete the sockMerchant function below.
 int sockMerchant(int n, vector<int> ar) {
- int p=0;
- std::map<int,int> m;
- for(int i=0;i<n;i++){
-  m[ar.at(i)]++;
-  if(m[ar.ar(i)]>0 && m[ar.at(i)]%2==0){
-   p++;
+  int p = 0;
+  std::map<int, int> m;
+  for (int i = 0; i < n; i++) {
+    m[ar.at(i)]++;
+    if (m[ar.at(i)] > 0 && m[ar.at(i)] % 2 == 0) {
+      p++;
+    }
   }
- }
- 
-
- return p;
+  return p;
 }
 
 int main()
